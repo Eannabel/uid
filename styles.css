@@ -1,0 +1,28 @@
+<!-- styles for links doesnt work yet...--> 
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: underline;}
+
+
+<!--styles for the topbar -->
+.topbar {
+    color:red
+}
+
+.topbar a {
+color: black
+}
+
+<!--styles for the categories -->
+nav{
+    background-color:
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{}
+
+a{}
