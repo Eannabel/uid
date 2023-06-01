@@ -4,55 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">>
 </head>
 <script src="script.js"></script>
 
-<header style="float:left">
-    <a href="#aboutus" class="class1">About us</a>
-    <a href="#roomplanner" class="class1">Room planner</a>
-    <a href="#giftcards" class="class1">Gift cards</a>
-    <span></span><div style="text-align:centre;">
-        <image src="images/logo.png" alt="logo" width="150px">
-    </div></span>
+<!--Header-->
+<header>
+    <div style="float:left">
+        <a href="#aboutus" class="class1">About us</a>
+        <a href="#roomplanner" class="class1">Room planner</a>
+        <a href="#giftcards" class="class1">Gift cards</a>
+    </div>
+    <span class="centred">
+        <image src="images/logo.png" alt="logo" width="380px">
+    </span>
     <span style="float:right;">
         <a href="#contactus" class="class1">Contact us</a>
     </span>
 </header>
 
-<div class="header">
-    <nav>
-        <ul>
-            <li><a href="livingroom.html" class="class2">Living Room</a></li>
-            <li><a href="bedroom.html" class="class2">Bedroom</a></li>
-            <li><a href="mattress.html" class="class2">Mattress</a></li>
-            <li><a href="dining.html" class="class2">Dining room</a></li>
-            <li><a href="entertainment.html" class="class2">Entertainment</a></li>
-            <li><a href="homeoffice.html" class="class2">Home office</a></li>
-            <li><a href="accessories.html" class="class2">Accessories</a></li>
-        </ul>
-    </nav>
 
+
+<!--Slideshow-->
 <div class="slideshow-container">
-
+    
     <div class="slides fade" style="display:block">
         <image src="images/homepage1.jpg" alt="homepage1" class="cropped">
     </div>
-
     <div class="slides fade">
         <image src="images/homepage2.jpeg" class="cropped">
     </div>
-
     <div class="slides fade">
         <image src="images/homepage3.jpeg" class="cropped">
     </div>
-
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!--Top Navigation Bar-->
+    <div class="navbar">
+        <a href="livingroom.html">Living Room</a>
+        <a href="bedroom.html">Bedroom</a>
+        <a href="mattress.html">Mattress</a>
+        <a href="dining.html">Dining room</a>
+        <a href="entertainment.html">Entertainment</a>
+        <a href="homeoffice.html">Home office</a>
+        <a href="accessories.html">Accessories</a>
+    </div>
 </div>
 <br>
 
-
+<!--Slideshow Dots-->
 <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>

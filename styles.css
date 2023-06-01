@@ -1,11 +1,11 @@
-<!-- styles for links doesnt work yet...--> 
+/*styles for links doesnt work yet...*/
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
 a:hover {text-decoration: underline;}
 a:active {text-decoration: underline;}
 
 
-<!--styles for the topbar -->
+/*styles for the top bar*/
 .topbar {
     color:red
 }
@@ -26,48 +26,84 @@ header {
 	box-sizing: border-box;
 }
 
+/*Header Links*/
 a.class1:link,a.class1:visited,a.class1:hover,a.class1:active {
 	color: white;
 	text-decoration: none;
 	padding-left: 10px;
 	padding: 10px;
+	font-size: 20px;
+	font-weight: 100;
+	position: relative;
+	top: -30px;
 }
 
+/*Navigation Bar Links*/
 a.class2:link,a.class2:visited,a.class2:hover,a.class2:active {
 	color: black;
 	text-decoration: none;
+	padding-left: 10px;
+	padding: 10px;
 }
+
+.navbar {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 0px;
+}
+
+.navbar a {
+	float: left;
+	color: black;
+	text-align: centre;
+	padding: 20px 16px;
+	padding-right: 40px;
+	padding-left: 40px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.navbar a:hover {
+	background-color: white;
+	color: #5e5e5e;
+}
+
 
 .active{
 	background-color: white;
+	
 }
+
 
 body {
 	background: #262626;
 }
 
+/*Cropping Homepage Images*/
 .cropped {
 	width: 100%; 
-	height: 900px; 
+	height: 800px; 
 	object-fit: cover;
 	object-position: 25% 25%; 
-	}
-
-<!--styles for the categories -->
-nav{
-    background-color:
 }
 
-ul{
-    list-style-type: none;
+.centred {
+	float: none;
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-li{}
-
-a{}
 
 /* Slideshow container */
 .slideshow-container {
+	min-width: 100%;
 	max-width: 100%;
 	position: relative;
 	margin: auto;
@@ -82,10 +118,12 @@ a{}
 .prev, .next {
 	cursor: pointer;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	width: auto;
-	margin-top: -22px;
-	padding: 16px;
+	padding-right: 16px;
+	padding-left: 16px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
@@ -102,6 +140,7 @@ a{}
   /* On hover, add a background color with a little bit see-through */
 .prev:hover, .next:hover {
 	background-color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
 }
 
 /* Number text (1/3 etc) */
@@ -140,3 +179,14 @@ a{}
 }
 
   
+button {
+    background-color: red;
+}
+
+/*layout for cart page*/
+.dining-table{
+     column-count: 3;
+     column-gap: 30px;
+     column-width: 300px;
+}
+
