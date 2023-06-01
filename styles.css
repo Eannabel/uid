@@ -26,3 +26,15 @@ ul{
 li{}
 
 a{}
+
+button {
+    background-color: red;
+}
+
+<!-- layout for cart page -->
+.dining-table{
+     column-count: 3;
+     column-gap: 30px;
+     column-width: 300px;
+}
+
