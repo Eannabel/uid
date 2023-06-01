@@ -4,31 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css"
-     <title>Carol House Furniture</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <script src="script.js"></script>
 
-<div class="topbar">
-    <a href="#aboutus">about us</a>
-        <a href="#roomplanner"> room planner</a>
-            <a href="#giftcards"> gift cards</a>
-                <a href="#contactus"> contact us </a>
+<header style="float:left">
+    <a href="#aboutus" class="class1">About us</a>
+    <a href="#roomplanner" class="class1">Room planner</a>
+    <a href="#giftcards" class="class1">Gift cards</a>
+    <span></span><div style="text-align:centre;">
+        <image src="images/logo.png" alt="logo" width="150px">
+    </div></span>
+    <span style="float:right;">
+        <a href="#contactus" class="class1">Contact us</a>
+    </span>
+</header>
 
-                <nav>
-                    <ul>
-                        <li><a href="livingroom.html">living room</a></li>
-                        <li><a href="bedroom.html">bedroom</a></li>
-                        <li><a href="mattress.html">mattress</a></li>
-                        <li><a href="dining.html">dining room</a></li>
-                        <li><a href="entertainment.html">entertainment</a></li>
-                        <li><a href="homeoffice.html">home office</a></li>
-                        <li><a href="accessories.html">accessories</a></li>
-                    </ul>
-                    </nav>
-        
+<div class="header">
+    <nav>
+        <ul>
+            <li><a href="livingroom.html" class="class2">Living Room</a></li>
+            <li><a href="bedroom.html" class="class2">Bedroom</a></li>
+            <li><a href="mattress.html" class="class2">Mattress</a></li>
+            <li><a href="dining.html" class="class2">Dining room</a></li>
+            <li><a href="entertainment.html" class="class2">Entertainment</a></li>
+            <li><a href="homeoffice.html" class="class2">Home office</a></li>
+            <li><a href="accessories.html" class="class2">Accessories</a></li>
+        </ul>
+    </nav>
+
+<div class="slideshow-container">
+
+    <div class="slides fade" style="display:block">
+        <image src="images/homepage1.jpg" alt="homepage1" class="cropped">
+    </div>
+
+    <div class="slides fade">
+        <image src="images/homepage2.jpeg" class="cropped">
+    </div>
+
+    <div class="slides fade">
+        <image src="images/homepage3.jpeg" class="cropped">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 
 <body>
-    <image src="images/homepage1.jpg" alt="homepage image 1">
 </body>
 </html>
