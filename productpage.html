@@ -5,20 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
     <title>Productpage</title>
 </head>
 <body>
 
-<div class="dining-table2">
-    <image src="diningtable2.jpg" alt="dining table image 2"></image>
-    <image src="diningtable3.jpg" alt="dining table image 3"></image>
-    <image src="diningtable4.jpg" alt="dining table image 4"></image>
+<!--Header-->
+<header>
+    <div style="float:left">
+        <a href="#aboutus" class="class1">About us</a>
+        <a href="#roomplanner" class="class1">Room planner</a>
+        <a href="#giftcards" class="class1">Gift cards</a>
+    </div>
+    <span class="centred">
+        <image src="images/logo.png" alt="logo" width="380px">
+    </span>
+    <span style="float:right;">
+        <a href="#contactus" class="class1">Contact us</a>
+    </span>
+</header>
+
+ <!--Top Navigation Bar-->
+ <div class="navbar">
+    <div class="dropdown">
+        <button><a href="livingroom.html">Living Room</a></button>
+        <div class="dropdown-content">
+            <a href="#">Accent Chests</a>
+            <a href="#">Benches</a>
+            <a href="#">Cabinets</a>
+            <a href="#">Chairs</a>
+            <a href="#">Chaises</a>
+            <a href="#">Lighting</a>
+            <a href="#">Loveseats</a>
+            <a href="#">Ottomans</a>
+            <a href="#">Sectionals</a>
+            <a href="#">Settees</a>
+            <a href="#">Sofas</a>
+            <a href="#">Stools</a>
+            <a href="#">Tables</a>
+            <a href="#">Reclining</a>
+        </div>
+    </div>
+    <a href="bedroom.html">Bedroom</a>
+    <a href="mattress.html">Mattress</a>
+    <a href="dining.html">Dining room</a>
+    <a href="entertainment.html">Entertainment</a>
+    <a href="homeoffice.html">Home office</a>
+    <a href="accessories.html">Accessories</a>
+</div>
+<br>
+
+<!--dining images section 1-->
+<div class="grid-container">
+    <div class="grid">
+        <img src="diningtable2.jpg" alt="dining table image 2" width="200px" height="200px">
+        <img src="diningtable3.jpg" alt="dining table image 3" width="200px" height="200px">
+        <img src="diningtable4.jpg" alt="dining table image 4" width="200px" height="200px">
     </div>
 
-    <div class="dining-table1">   
-        <image src="diningtable1.jpg" alt="dining table image 1"></image>
+<!--dining images section 2-->
+        <div class="grid-container">
+            <div class="grid">
+                <div class="slideshow-container">
+                    <div class="slides fade" style="display:block">
+                        <img src="diningtable2.jpg" style="width:600px; height: 600px;">
+                    </div>
+                    <div class="slides fade">
+                        <img src="diningtable3.jpg" style="width:600px; height: 600px;">
+                    </div>
+                    <div class="slides fade">
+                        <img src="diningtable4.jpg" style="width:600px; height: 600px;">
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
 
-    <h1>Ellsworth Round Dining Table</h1>
+ <!--dining table section 3-->
+ <div class="grid-container">
+    <div class="grid">
+ <h1>Ellsworth Round Dining Table</h1>
     <section>
     <p>American Dew Emporium</p>
     <p>SKU:012-701R</p>
@@ -33,6 +100,7 @@
             <p> Availability in stock 90% of the time </p>
             <p> On Display Maryland Hts. & Valley Park, MO stores!</p> 
         </section>
+        <div class="add-to-cart">
         <a href="cartpage.html"><button>add to cart</button></a>
 
         <p> UPHOLSTERED FURNITURE: in store may be displayed in latest colour patterns available. Pictures shown demonstrate colours and patterns that are usually also available. Most Brand Names at Carol House have many fabric options. </p>
