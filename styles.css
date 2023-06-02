@@ -4,6 +4,126 @@ a:visited {text-decoration: none;}
 a:hover {text-decoration: underline;}
 a:active {text-decoration: underline;}
 
+/*Image Covers*/
+.cover {
+	background-image: url('https://images.unsplash.com/photo-1484256017452-47f3e80eae7c?dpr=1&auto=format&fit=crop&w=2850&q=60&cs=tinysrgb');
+	background-size:cover;
+	background-position: center center;
+	background-color: white;
+	object-fit: cover;
+	object-position: 25% 25%; 
+}
+
+/*Square Grids*/
+SquareGrid {
+	--content-width: 80vw;
+	--gutter: 40px;
+	--columns: 1;
+	--row-size: calc(
+		( var(--content-width) - (var(--gutter) * (var(--columns) - 1))
+		) / var(--columns)
+	);
+	display: grid;
+	width: 100%;
+	max-width: var(--content-width);
+
+	grid-template-columns: repeat(var(--columns), 1fr);
+  	grid-auto-rows: var(--row-size);
+
+  	grid-column-gap: var(--gutter);
+  	grid-row-gap: var(--gutter);
+}
+
+@media (min-width: 450px){
+	SquareGrid{
+	  --columns: 2;
+	}
+}
+  
+@media (min-width: 750px){
+	SquareGrid{
+	  --columns: 3;
+	}
+}
+  
+@media (min-width: 1200px){
+	SquareGrid{
+	  --columns: 4;
+	}
+}
+
+/*Navigation Menu Bar*/
+.navbar {
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 100%;
+	overflow: visible;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 0px;
+	list-style-type: none;
+}
+
+li {
+	float:left;
+}
+
+li a, .dropbtn {
+	color: black;
+	text-align: centre;
+	padding: 20px 16px;
+	padding-right: 40px;
+	padding-left: 40px;
+	text-decoration: none;
+	font-size: 20px;
+	display: inline-block;
+}
+
+.li a:hover, .dropdown:hover .dropbtn {
+	background-color: rgb(111, 111, 111);
+	color: #ffffff;
+	text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+	background-color: white;
+	color:rgb(111, 111, 111);
+	text-decoration: none;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+  
+ /* Links inside the dropdown */
+.dropdown-content a {
+	display: block;
+	color: black;
+	padding: 8px 16px;
+	text-decoration: none;
+	text-align: left;
+	font-size: 18px;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
 
 /*Text Styles*/
 h1 {
@@ -60,77 +180,13 @@ a.class2:link,a.class2:visited,a.class2:hover,a.class2:active {
 	padding: 10px;
 }
 
-.navbar {
-	background-color: rgba(255, 255, 255, 0.7);
-	width: 100%;
-	height: 60px;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	position: absolute;
-	top: 0px;
-}
-
-.navbar a {
-	float: left;
-	color: black;
-	text-align: centre;
-	padding: 20px 16px;
-	padding-right: 40px;
-	padding-left: 40px;
-	text-decoration: none;
-	font-size: 20px;
-}
-
-.navbar a:hover {
-	background-color: rgb(111, 111, 111);
-	color: #ffffff;
-}
-
 /* Style The Dropdown Button */
-.dropbtn {
-	background-color: white;
-	color: black;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-	position: relative;
-	display: inline-block;
-	float: left;
-  	overflow: hidden;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-}
-  
- /* Links inside the dropdown */
-.dropdown-content a {
-	float: none;
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	text-align: left;
-}
-  
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-	display: block;
+button {
+	border:none;
+    border-radius:5px;
+    padding:15px 30px;
+    font-size:18px;
+    cursor:pointer;
 }
 
 /*Main Body*/
@@ -226,6 +282,8 @@ body {
 
 .flexbox-container{
     display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .box {
@@ -235,9 +293,6 @@ body {
 	text-align: center;
 }
   
-button {
-    background-color: red;
-}
 
 /*layout for cart page*/
 .dining-table{
