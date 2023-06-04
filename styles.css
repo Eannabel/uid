@@ -376,41 +376,40 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
+  }
 
 
 
 
 
-/*????? payment/delivery*/
-.shipping-container {
+/*????? payment/delivery/
+  .shipping-container {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	height: 100vh;
-}
+  }
   
-.shipping-information {
+  .shipping-information {
 	text-align: center;
 	margin-left: 20px; /* Adjust the left margin as needed */
-}
+  }
   
-.shipping-table {
+  .shipping-table {
 	border: 1px solid red; /* Add border outline */
 	border-collapse: collapse;
 	width: 100%;
- }
+  }
   
-.shipping-table td, .shipping-table th {
+  .shipping-table td, .shipping-table th {
 	border: 1px solid red;
 	padding: 8px;
-}
+  }
   
-.shipping-table th {
+  .shipping-table th {
 	background-color: #f2f2f2;
-}
+  }
  
-  
   
   
   
