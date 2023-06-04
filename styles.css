@@ -383,7 +383,18 @@ body {
 	background-color: #f2f2f2;
   }
  
-  
+  <!-- Shipping Information-->
+  table, th, td{
+	border: 1px solid
+  }
+
+  table {
+	width: 50%;
+	border-collapse: collapse;
+	padding: 10px;
+  }
+
+  tr:hover {background-color: rgb(255, 197, 80);}
   
   
   
