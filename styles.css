@@ -429,6 +429,15 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 10px;
+}
+
+.center2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
 }
 
 .btn1 {
@@ -440,6 +449,17 @@ body {
 	width: 50%;
 	position: relative;
 	margin: 0 auto;
+}
+
+.btn2 {
+	background-color: #c42727;
+	color: white;
+	border-radius: 15px;
+	border: none;
+	padding: 10px;
+	width: 100%;
+	position: relative;
+	margin: 10px auto;
 }
 
 
@@ -507,9 +527,9 @@ input {
 	padding: 10px;
 }
 
-  tr:hover {background-color: rgb(255, 197, 80);}
+tr:hover {background-color: rgb(255, 197, 80);}
 
-  .vertical-section{
+.vertical-section{
 	display: flex;
 	flex-direction: column;
 	align-items: left;
@@ -521,4 +541,13 @@ input {
 margin-top: 20px;
 text-align: center;
  }
-  
+
+backgroundimageforconfirmation
+
+ .background{
+min-height: 100vh;
+ background-image: url("backgroundimage.jpg");
+ background-size: cover;
+ background-position: center center;
+ margin-top: 10px;
+}
