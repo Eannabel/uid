@@ -166,6 +166,7 @@ li.dropdown {
 /*Text Styles*/
 h1 {
     color:rgb(0, 0, 0);
+	font-family: cormorant-garamond, serif;
 	font-size: 56px;
 	text-align: center;
 	font-weight: 60;
@@ -173,6 +174,7 @@ h1 {
 
 h2 {
 	color:black;
+	font-family: cormorant-garamond, serif;
 	font-size: 36px;
 	text-align: left;
 	font-weight: 60;
@@ -185,7 +187,7 @@ h3 {
 	font-size: 15px;
 	text-align: left;
 	font-weight: 60;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: montserrat, sans-serif;
 	margin-left: 10px;
 	margin-top: 10px;
 	margin-bottom: 5px;
@@ -195,7 +197,7 @@ h4 {
 	color:#5e5e5e;
 	font-size: 15px;
 	font-weight: 60;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: montserrat, sans-serif;
 	margin-top: 60px;
 	margin-bottom: 5px;
 }
@@ -205,17 +207,17 @@ h5 {
 	font-size: 20px;
 	text-align: left;
 	font-weight: 600;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: montserrat, sans-serif;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
 h6 {
 	color:#ff2f0b;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: left;
 	font-weight: 60;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: montserrat, sans-serif;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
@@ -225,7 +227,7 @@ a.tnc {
 	font-size: 15px;
 	text-align: left;
 	font-weight: 60;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: montserrat, sans-serif;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	text-decoration: underline;
@@ -237,6 +239,7 @@ a.tnc {
 
 a.h2:link,a.h2:visited,a.h2:active {
 	color:white;
+	font-family: montserrat, sans-serif;
 	font-size: 16px;
 	text-align: left;
 }
@@ -251,7 +254,6 @@ header {
 	height: 100px;
 	width: 101.05%;
 	margin: -8px;
-	font-family: Calibri;
 	padding: 30px;
 	padding-top: 47px;
 	padding-bottom: 40px;
@@ -261,10 +263,11 @@ header {
 /*Header Links*/
 a.class1:link,a.class1:visited,a.class1:hover,a.class1:active {
 	color: white;
+	font-family: montserrat, sans-serif;
 	text-decoration: none;
 	padding-left: 10px;
 	padding: 20px;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 100;
 	position: relative;
 	top: -10px;
