@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/isg4ppd.css">
     <title>Document</title>
 </head>
 <body>
@@ -138,60 +139,37 @@
 
 <h1>Search Results</h1>
 
-<div class="flexbox-container" style="margin-top: 40px; padding: 40px;">
+<div class="flexbox-container" width="100%" style="margin-top:40px;padding:40px;">
     <!-- Filters section -->
-    <div class="vertical-section" style="flex: 1;">
-      <h3>Filters</h3>
-      <p>Shop by category</p>
-      <p>living room</p>
-      <p>bedroom</p>
-      <p>Mattresses</p>
-      <p>Dining room</p>
-      <p>Entertainment</p>
-      <p>Home office</p>
-      <p>Accessories</p>
-  
-      <h3>Item Type</h3>
-      <div>
-        <div>
-          <input type="checkbox" id="accentChests" name="itemType" value="accentChests">
-          <label for="accentChests">Accent Chests</label>
+    <div class="flex-child" style="padding-right:100px;" width="400px">
+      <button class="collapsible"><h3 style="font-size:16px">Filters</h3></button>
+      <div class="filtercontent" style="text-align:left;">
+        <button class="collapsible"><h3 style="font-size:20px;font-weight:600;">Shop by Category</h3></button>
+        <div class="filtercontent" style="padding:20px 20px;margin:-20px 0;">
+          <p><a href="#" class="h2" style="color:black;">Living Room</a></p>
+          <p><a href="#" class="h2" style="color:black;">Bedroom</a></p>
+          <p><a href="#" class="h2" style="color:black;">Mattresses</a></p>
+          <p><a href="#" class="h2" style="color:black;">Dining Room</a></p>
+          <p><a href="#" class="h2" style="color:black;">Entertainment</a></p>
+          <p><a href="#" class="h2" style="color:black;">Home Office</a></p>
+          <p><a href="#" class="h2" style="color:black;">Accessories</a></p>
         </div>
-        <div>
-          <input type="checkbox" id="benches" name="itemType" value="benches">
-          <label for="benches">Benches</label>
-        </div>
-        <div>
-          <input type="checkbox" id="cabinets" name="itemType" value="cabinets">
-          <label for="cabinets">Cabinets</label>
-        </div>
-        <div>
-          <input type="checkbox" id="reclining" name="itemType" value="reclining">
-          <label for="reclining">Chairs</label>
-        </div>
-        <div>
-          <input type="checkbox" id="reclining" name="itemType" value="reclining">
-          <label for="reclining">Chaises</label>
-        </div>
-        <div>
-          <input type="checkbox" id="reclining" name="itemType" value="reclining">
-          <label for="reclining">Lighting</label>
-        </div>
-        <div>
-          <input type="checkbox" id="reclining" name="itemType" value="reclining">
-          <label for="reclining">Loveseats</label>
-        </div>
-        <div>
-          <input type="checkbox" id="reclining" name="itemType" value="reclining">
-          <label for="reclining">Ottomans</label>
-        </div>
-        <div>
-          <input type="checkbox" id="reclining" name="itemType" value="reclining">
-          <label for="reclining">Sectionals</label>
-        </div>
-        <div>
-          <input type="checkbox" id="reclining" name="itemType" value="reclining">
-          <label for="reclining">Settees</label>
+        <button class="collapsible"><h3 style="font-size:20px;font-weight:600;">Item Type</h3></button>
+        <div class="filtercontent" style="padding:20px 20px;margin:-20px 0;">
+          <p><input type="checkbox" id="checkbtn" name="itemType" value="bars" style="margin-left:0;margin-top:2px;">
+            <label for="bars"><h3 style="margin-left:30px;">Bars</h3></label></p>
+          <p><input type="checkbox" id="checkbtn" name="itemType" value="benches" style="margin-left:0;margin-top:2px;">
+            <label for="benches"><h3 style="margin-left:30px;">Benches</h3></label></p>
+          <p><input type="checkbox" id="checkbtn" name="itemType" value="cabinets" style="margin-left:0;margin-top:2px;">
+            <label for="cabinets"><h3 style="margin-left:30px;">Cabinets</h3></label></p>
+          <p><input type="checkbox" id="checkbtn" name="itemType" value="chairs" style="margin-left:0;margin-top:2px;">
+            <label for="chairs"><h3 style="margin-left:30px;">Chairs</h3></label></p>
+          <p><input type="checkbox" id="checkbtn" name="itemType" value="islands" style="margin-left:0;margin-top:2px;">
+            <label for="islands"><h3 style="margin-left:30px;">Kitchen Islands</h3></label></p>
+          <p><input type="checkbox" id="checkbtn" name="itemType" value="Stools" style="margin-left:0;margin-top:2px;">
+            <label for="stools"><h3 style="margin-left:30px;">Stools</h3></label></p>
+          <p><input type="checkbox" id="checkbtn" name="itemType" value="tables" style="margin-left:0;margin-top:2px;">
+            <label for="tables"><h3 style="margin-left:30px;">Tables</h3></label></p>
         </div>
       </div>
     </div>
@@ -210,6 +188,25 @@
         </SquareGrid>
       </div>
     </div>
+  </div>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+</script>
 
 </body>
 </html>

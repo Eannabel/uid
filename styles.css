@@ -178,7 +178,6 @@ h2 {
 	font-size: 36px;
 	text-align: left;
 	font-weight: 60;
-	margin-top: 40px;
 	margin-bottom: 5px;
 }
 
@@ -440,6 +439,7 @@ body {
 	width: 50%;
 	position: relative;
 	margin: 0 auto;
+	cursor: pointer;
 }
 
 
@@ -468,7 +468,7 @@ label {
 	margin-bottom: 10px;
 }
 
-#tncbtn {
+#tncbtn, #checkbtn{
 	accent-color: #5e5e5e;
 }
 
@@ -507,18 +507,41 @@ input {
 	padding: 10px;
 }
 
-  tr:hover {background-color: rgb(255, 197, 80);}
+tr:hover {background-color: rgb(255, 197, 80);}
 
-  .vertical-section{
+.vertical-section{
 	display: flex;
 	flex-direction: column;
 	align-items: left;
 	text-align: left;
 	margin-bottom: 20px;
-  }
+}
 
- .search-container{
-margin-top: 20px;
-text-align: center;
- }
+.search-container{
+	margin-top: 20px;
+	text-align: center;
+}
   
+.collapsible {
+	cursor: pointer;
+	padding: 10px 10px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	background-color: white;
+}
+
+.filtercontent {
+	width: 100%;
+	overflow: hidden;
+	background-color: white;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+	
+}
+
+.active, .collapsible:hover {
+	background-color: white;
+}
