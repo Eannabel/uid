@@ -543,11 +543,3 @@ text-align: center;
  }
 
 backgroundimageforconfirmation
-
- .background{
-min-height: 100vh;
- background-image: url("backgroundimage.jpg");
- background-size: cover;
- background-position: center center;
- margin-top: 10px;
-}
