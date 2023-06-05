@@ -409,6 +409,7 @@ body {
 .container {
 	display: flex;
 	flex-wrap: nowrap;
+	margin-top: 60px;
   }
 
   .container > div {
@@ -546,4 +547,14 @@ tr:hover {background-color: rgb(255, 197, 80);}
 margin-top: 20px;
 text-align: center;
  }
+
+ .small-image {
+	width: 100px; /* Adjust the width as per your preference */
+	height: 100px; /* Adjust the height as per your preference */
+  }
+
+  .small-image2 {
+	width: 25px; /* Adjust the width as per your preference */
+	height: 25px; /* Adjust the height as per your preference */
+  }
 

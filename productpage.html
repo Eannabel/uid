@@ -133,50 +133,91 @@
 <div class="container">
     <!-- dining images section 1 -->
     <div class="section1">
-      <h2>Section 1</h2>
-      <img src="diningtable2.jpg" alt="dining table image 2">
-      <img src="diningtable3.jpg" alt="dining table image 3">
-      <img src="diningtable4.jpg" alt="dining table image 4">
+        <img src="diningtable2.jpg" alt="dining table image 2">
+        <img src="diningtable3.jpg" alt="dining table image 3">
+        <img src="diningtable4.jpg" alt="dining table image 4">
     </div>
-
+  
     <!-- dining images section 2 -->
-    <div class="section2">
-      <h2>Section 2</h2>
-      <div class="slideshow-container">
-        <div class="slides fade">
-          <img src="diningtable2.jpg">
-        </div>
-        <div class="slides fade">
-          <img src="diningtable3.jpg">
-        </div>
-        <div class="slides fade">
-          <img src="diningtable4.jpg">
-        </div>
+<div class="section2">
+    <div class="slideshow-container2">
+      <div class="slides fade">
+        <img src="diningtable2.jpg" class="slideshow-image2">
       </div>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="slides fade">
+        <img src="diningtable3.jpg" class="slideshow-image2">
+      </div>
+      <div class="slides fade">
+        <img src="diningtable4.jpg" class="slideshow-image2">
+      </div>
     </div>
+    <a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
 
     <!-- dining table section 3 -->
     <div class="section3">
-      <h2>Section 3</h2>
-      <h1>Ellsworth Round Dining Table</h1>
-      <section>
-        <p>American Dew Emporium</p>
-        <p>SKU: 012-701R</p>
-      </section>
-      <section>
-        <p style="color: red; font-size: 30px;" > $1797</p>
-        <p>Carol House Discount Price</p>
-      </section>
-      <section>
-        <p><strong>Availability</strong> in stock 90% of the time</p>
-        <p>On Display Maryland Hts. & Valley Park, MO stores!</p> 
-      </section>
-        <button class="btn2" onclick="window.location.href='cartpage.html'"><h3 style="color:white;text-align:center;font-size:20px;margin:0;">Add to Cart</h3></button>
-        <p>UPHOLSTERED FURNITURE: in-store may be displayed in the latest color patterns available. Pictures shown demonstrate colors and patterns that are usually also available. Most Brand Names at Carol House have many fabric options.</p>
-        <img src="moreinformation.jpg" alt="facebook, twitter, pinterest" width="70" height="70" class="image-class">
+        <h1>Ellsworth Round Dining Table</h1>
+        <section>
+          <p>American Dew Emporium</p>
+          <p>SKU: 012-701R</p>
+        </section>
+        <section>
+          <p style="color: red; font-size: 30px;" > $1797</p>
+          <p>Carol House Discount Price</p>
+        </section>
+        <section>
+          <p><strong>Availability</strong> in stock 90% of the time</p>
+          <p>On Display Maryland Hts. & Valley Park, MO stores!</p> 
+        </section>
+          <button class="btn2" onclick="window.location.href='cartpage.html'"><h3 style="color:white;text-align:center;font-size:20px;margin:0;">Add to Cart</h3></button>
+          <p>UPHOLSTERED FURNITURE: in-store may be displayed in the latest color patterns available. Pictures shown demonstrate colors and patterns that are usually also available. Most Brand Names at Carol House have many fabric options.</p>
+          <img src="moreinformation.jpg" alt="facebook, twitter, pinterest" width="70" height="70" class="image-class">
+      </div>
+    </div>
+  
+    <!-- Slideshow pagination dots -->
+    <div style="text-align: center;">
+      <span class="dot2" onclick="currentSlide(1)"></span>
+      <span class="dot2" onclick="currentSlide(2)"></span>
+      <span class="dot2" onclick="currentSlide(3)"></span>
     </div>
   </div>
 </body>
 </html>
+
+
+
+
+
+<!-- dining images section 2 -->
+<div class="section2">
+    <div class="slideshow-container">
+      <div class="slides fade">
+        <img src="diningtable2.jpg" class="small-image">
+      </div>
+      <div class="slides fade">
+        <img src="diningtable3.jpg" class="small-image">
+      </div>
+      <div class="slides fade">
+        <img src="diningtable4.jpg" class="small-image">
+      </div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+<!-- Slideshow pagination dots -->
+<div style="text-align: center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+.slideshow-container2 {
+    min-width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 100px;
+}
