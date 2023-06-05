@@ -466,5 +466,15 @@ input {
 	padding: 10px;
 }
 
-tr:hover {background-color: rgb(255, 197, 80);}
+  tr:hover {background-color: rgb(255, 197, 80);}
+
+  .vertical-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 20px;
+  }
+
+ 
   
