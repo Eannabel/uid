@@ -684,12 +684,10 @@ tr:hover {background-color: rgb(255, 197, 80);}
 }
 
 .small-image {
-	width: 100px; /* Adjust the width as per your preference */
-	height: 100px; /* Adjust the height as per your preference */
+	width: 100px; 
+	height: 100px; 
 }
 
 .small-image2 {
-	width: 25px; /* Adjust the width as per your preference */
-	height: 25px; /* Adjust the height as per your preference */
-}
-
+	width: 25px; 
+	height: 25px; 
