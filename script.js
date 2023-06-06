@@ -28,6 +28,22 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+function showSlides2(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let gal = document.getElementsByClassName("gallery");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < gal.length; i++) {
+    gal[i].className = gal[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  gal[slideIndex-1].className += " active2";
+}
+
 // Collapsible Animation
 function collapsible() {
   var colbtn = document.getElementsByClassName("collapsible");

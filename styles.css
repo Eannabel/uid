@@ -47,10 +47,23 @@ a:active {text-decoration: underline;}
 	position: relative;
 }
 
+.squareimg2 {
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+
 .imagefit {
 	object-fit: contain;
 	width: 100%;
   	height: 100%;
+}
+
+.imagefit2 {
+	object-fit: contain;
+	width: 100%;
+  	height: 100%;
+	margin-top: 25%;
 }
 
 /*Square Grids*/
@@ -115,9 +128,9 @@ li a, .dropbtn {
 	padding: 20px 16px;
 	padding-right: 40px;
 	padding-left: 40px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: montserrat, sans-serif;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 18px;
 	display: flex;
 }
 
@@ -137,7 +150,6 @@ li.dropdown {
 	position: absolute;
 	overflow: hidden;
 	background-color: rgba(255, 255, 255, 0.9);
-	border-radius: 5px;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -148,10 +160,10 @@ li.dropdown {
 	display: block;
 	color: black;
 	padding: 12px 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: montserrat, sans-serif;
 	text-decoration: none;
 	text-align: left;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 /* Change color of dropdown links on hover */
@@ -297,6 +309,14 @@ body {
 	object-position: 25% 25%; 
 }
 
+/*Cropping Homepage Images*/
+.cropped2 {
+	width: 80%; 
+	height: 800px; 
+	object-fit: cover;
+	object-position: 25% 25%; 
+}
+
 /*Centring Logo*/
 .centred {
 	float: none;
@@ -306,7 +326,7 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-/* Slideshow container */
+/*Slideshow container*/
 .slideshow-container {
 	min-width: 100%;
 	max-width: 100%;
@@ -314,12 +334,20 @@ body {
 	top: 100px;
 }
 
-/* Hide the images by default */
+/*Slideshow container (Product)*/
+.slideshow-container2 {
+	min-width: 90%;
+	max-width: 90%;
+	padding: 30px;
+	margin-top: -30px;
+}
+
+/*Hide the images by default*/
 .slides {
 	display: none;
 }
 
-/* Next & Previous Buttons */
+/*Next & Previous Buttons*/
 .prev, .next {
 	cursor: pointer;
 	position: absolute;
@@ -336,14 +364,43 @@ body {
 	border-radius: 0 3px 3px 0;
 	user-select: none;
 }
-/* Position the "next button" to the right */
+
+/*Next & Previous Buttons*/
+.prev2, .next2 {
+	cursor: pointer;
+	float: left;
+	margin-top: -50%;
+	width: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/*Position the "next button" to the right*/
 .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
 }
   
-  /* On hover, add a background color with a little bit see-through */
+/*Position the "next button" to the right*/
+.next2 {
+	float:right;
+	border-radius: 3px 0 0 3px;
+}
+  
+/*On hover, add a background color with a little bit see-through*/
 .prev:hover, .next:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+/*On hover, add a background color with a little bit see-through*/
+.prev2:hover, .next2:hover {
 	background-color: rgba(255, 255, 255, 0.5);
 	text-decoration: none;
 }
@@ -361,11 +418,22 @@ body {
 	margin-top: 822px;
 }
 
+/*Gallery*/  
+.gallery {
+	cursor: pointer;
+	padding: 5px;
+	transition: background-color 0.6s ease;
+}
+
 .active, .dot:hover {
 	background-color: #717171;
 }
 
-/* Fading animation */
+.active2, .gallery:hover {
+	border: 1px solid #000000;
+}
+
+/*Fading animation*/
 .fade {
 	animation-name: fade;
 	animation-duration: 1.5s;
@@ -379,6 +447,18 @@ body {
 .flexbox-container{
     display: flex;
 	justify-content: center;
+}
+
+.flex-grid-three {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 20px;
+	margin: 0px 30px;
+}
+
+.flex-grid-three .col {
+	width: 32%;
+	padding: 0px 25px;
 }
 
 .flex-child {
@@ -408,20 +488,24 @@ body {
 .container {
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 30px;
-}
+	margin-top: -5px;
+	padding-left: 20px;
+  }
 
 .container > div {
-	padding: 10px;
+	padding: 30px;
 }
 
 .section1 {
-	flex: 1 1 15%;
+	flex: 1 1 5%;
 }
 
-.section2,
+.section2 {
+	flex: 1 1 55%;
+}
+
 .section3 {
-	flex: 1 1 37.5%;
+	flex: 1 1 40%;
 }
 
 .container img {
@@ -447,7 +531,9 @@ body {
 
 .btn1 {
 	background-color: #c42727;
+	cursor: pointer;
 	color: white;
+	font-family: montserrat, sans-serif;
 	border-radius: 15px;
 	border: none;
 	padding: 10px;
@@ -459,11 +545,24 @@ body {
 
 .btn2 {
 	background-color: #c42727;
+	cursor: pointer;
 	color: white;
 	border-radius: 15px;
 	border: none;
 	padding: 10px;
 	width: 100%;
+	position: relative;
+	margin: 10px auto;
+}
+
+.btn3 {
+	background-color: white;
+	cursor: pointer;
+	color: rgb(0, 0, 0);
+	border-radius: 15px;
+	border: 1px solid black;
+	padding: 10px;
+	width: max-content;
 	position: relative;
 	margin: 10px auto;
 }
@@ -562,7 +661,7 @@ tr:hover {background-color: rgb(255, 197, 80);}
   
 .collapsible {
 	cursor: pointer;
-	padding: 10px 10px;
+	padding: 10px 0;
 	width: 100%;
 	border: none;
 	text-align: left;
@@ -583,3 +682,14 @@ tr:hover {background-color: rgb(255, 197, 80);}
 .active, .collapsible:hover {
 	background-color: white;
 }
+
+.small-image {
+	width: 100px; /* Adjust the width as per your preference */
+	height: 100px; /* Adjust the height as per your preference */
+}
+
+.small-image2 {
+	width: 25px; /* Adjust the width as per your preference */
+	height: 25px; /* Adjust the height as per your preference */
+}
+
